@@ -1,5 +1,7 @@
-package screenmatching;
+package screenmatching.modelos;
 
+// a herança é realizada atráves da palavra extends
+// a classe que herda é a subclasse e a que  é herdada é a superclasse
 public class Serie extends Titulo {
     private int temporadas;
     private boolean ativa;
@@ -38,6 +40,7 @@ public class Serie extends Titulo {
         this.minutosPorEpisodio = minutosPorEpisodio;
     }
 
+    // override possibilita sobrescrever o metodo - vai alterar o comportamento da classe mae
     @Override
     public int getDuracaoEmMinutos(){
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;

@@ -1,4 +1,4 @@
-package screenmatching;
+package screenmatching.modelos;
 
 public class Titulo {
     private String nome;

@@ -1,8 +1,7 @@
-package screenmatching;
+package screenmatching.modelos;
 
 public class Filme extends Titulo {
-   private String diretor;
-
+    private String diretor;
 
     public String getDiretor() {
         return diretor;
