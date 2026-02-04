@@ -1,15 +1,47 @@
 package screenmatching;
 
 public class Filme {
-    String nome;
-    int anoDeLancamento;
-    boolean incluindoNoPlano;
+    private String nome;
+    private int anoDeLancamento;
+    private boolean incluindoNoPlano;
     private double somaAvaliacoes;
     private int totalDeAvaliacoes;
-    int duracaoEmMinutos;
+    private int duracaoEmMinutos;
 
     int getTotalDeAvaliacoes(){
         return totalDeAvaliacoes;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public boolean isIncluindoNoPlano() {
+        return incluindoNoPlano;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIncluindoNoPlano(boolean incluindoNoPlano) {
+        this.incluindoNoPlano = incluindoNoPlano;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
     void exibeFichaTecnica(){
