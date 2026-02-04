@@ -1,28 +1,14 @@
 package screenmatching;
 
-public class Filme {
-    String nome;
-    int anoDeLancamento;
-    boolean incluindoNoPlano;
-    private double somaAvaliacoes;
-    private int totalDeAvaliacoes;
-    int duracaoEmMinutos;
+public class Filme extends Titulo {
+   private String diretor;
 
-    int getTotalDeAvaliacoes(){
-        return totalDeAvaliacoes;
+
+    public String getDiretor() {
+        return diretor;
     }
 
-    void exibeFichaTecnica(){
-        System.out.println("Nome do filme: " + nome);
-        System.out.println("Ano de lançamento: " + anoDeLancamento);
-    }
-
-    void avalia(double nota){
-        somaAvaliacoes += nota;
-        totalDeAvaliacoes++;
-    }
-
-    double pegaMedia(){
-        return somaAvaliacoes / totalDeAvaliacoes;
+    public void setDiretor(String diretor){
+        this.diretor = diretor;
     }
 }
