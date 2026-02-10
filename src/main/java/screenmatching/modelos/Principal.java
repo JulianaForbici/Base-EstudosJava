@@ -3,6 +3,8 @@ package screenmatching.modelos;
 import screenmatching.calculos.CalculadoraDeTempo;
 import screenmatching.calculos.FiltroRecomendacao;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         // tipo por referencia
@@ -42,5 +44,19 @@ public class Principal {
         episodio.setTotalVisualizacoes(100);
         filtro.filtra(episodio);
 
+        var filmeTimothee = new Filme();
+        filmeTimothee.setDuracaoEmMinutos(230);
+        filmeTimothee.setNome("Marty Supreme");
+        filmeTimothee.setAnoDeLancamento(2026);
+        filmeTimothee.avalia(9);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeTimothee);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(outroFilme);
+        System.out.println("Tamanho da lista " + listaDeFilmes.size());
+        System.out.println("Primeiro filme " + listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes);
+        System.out.println("toString do filme " + listaDeFilmes.get(0).toString());
     }
 }
