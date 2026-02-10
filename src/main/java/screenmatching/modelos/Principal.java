@@ -44,10 +44,8 @@ public class Principal {
         episodio.setTotalVisualizacoes(100);
         filtro.filtra(episodio);
 
-        var filmeTimothee = new Filme();
+        var filmeTimothee = new Filme("Marty Supreme", 2025);
         filmeTimothee.setDuracaoEmMinutos(230);
-        filmeTimothee.setNome("Marty Supreme");
-        filmeTimothee.setAnoDeLancamento(2026);
         filmeTimothee.avalia(9);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
