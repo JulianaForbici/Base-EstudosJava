@@ -6,8 +6,7 @@ import screenmatching.calculos.FiltroRecomendacao;
 public class Principal {
     public static void main(String[] args) {
         // tipo por referencia
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("O poderoso chefão");
+        Filme meuFilme = new Filme("O poderoso chefão");
         meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracaoEmMinutos(200);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
@@ -28,8 +27,7 @@ public class Principal {
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duração da série: " + lost.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Isle of dogs");
+        Filme outroFilme = new Filme("Isle of dogs");
         outroFilme.setAnoDeLancamento(2000);
         outroFilme.setDuracaoEmMinutos(100);
 
