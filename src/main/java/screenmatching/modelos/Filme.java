@@ -5,6 +5,9 @@ import screenmatching.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
+    public Filme(String nome, int anoLancamento) {
+        super(nome, anoLancamento);
+    }
     public String getDiretor() {
         return diretor;
     }
@@ -16,8 +19,5 @@ public class Filme extends Titulo implements Classificavel {
     @Override
     public int getClassificacao() {
         return (int) pegaMedia() / 2;
-    }
-    public Filme(String nome){
-        this.setNome(nome);
     }
 }

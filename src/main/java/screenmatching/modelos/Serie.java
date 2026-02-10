@@ -3,6 +3,8 @@ package screenmatching.modelos;
 // a herança é realizada atráves da palavra extends
 // a classe que herda é a subclasse e a que  é herdada é a superclasse
 public class Serie extends Titulo {
+    private String nome;
+    private int anoLancamento;
     private int temporadas;
     private boolean ativa;
     private int episodiosPorTemporada;
@@ -45,5 +47,8 @@ public class Serie extends Titulo {
     public int getDuracaoEmMinutos(){
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
-
+    // não tem herança de construtor
+    public Serie(String nome, int anoLancamento) {
+       super(nome, anoLancamento);
+    }
 }
