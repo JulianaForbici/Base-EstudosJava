@@ -1,8 +1,6 @@
 package screenmatching.modelos;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -17,7 +15,7 @@ public class PrincipalComListas {
         // var de referencia
         Filme f1 = filmeTimothee;
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new LinkedList<>();
         lista.add(filmeTimothee);
         lista.add(meuFilme);
         lista.add(outroFilme);
