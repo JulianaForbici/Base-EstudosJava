@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class LeituraDeArquivo {
     public static void main(String[] args) {
         try{
-            File arquivo = new File("arquivo.txt");
+            File arquivo = new File("arquivo.json");
             Scanner scanner = new Scanner(arquivo);
 
             while(scanner.hasNextLine()){
